@@ -1,0 +1,25 @@
+import java.time.LocalDate;
+
+public class  HoaDonTheoGio extends HoaDon {
+	int gioThue;
+	HoaDonTheoGio() {
+		
+	}
+	HoaDonTheoGio(int _maHoaDon, LocalDate _ngayHoaDon,
+			String _tenKhachHang, int _maPhong, double _donGia, int _gioThue) {
+		maHoaDon = _maHoaDon;
+		ngayHoaDon = _ngayHoaDon;
+		maPhong = _maPhong;
+		donGia = _donGia;
+        gioThue = _gioThue;
+          
+	}
+
+	double tinhGiaTien() {
+		double giaTien ;
+		giaTien = donGia * gioThue;
+		return giaTien;
+		
+		
+	}
+}
